@@ -22,20 +22,29 @@ end
 # parameter: games (an array)
 # return value: games, alphabetically sorted and duplicates removed
 # hint: chain Array#sort and Array#uniq together
-
+def alphabetical_list(games)
+  games.sort.uniq
+end
 
 # method name: #lucky_number
 # parameter: number (an integer) with default value of 7
 # return value: a string "Today's lucky number is <number>"
-
+def lucky_number(number = 7)
+  "Today's lucky number is #{number}"
+end
 
 # method name: #ascii_code
 # parameter: character (a string)
 # return value: the character's ordinal number
 # explicit return value: 'Input Error' if character's length does not equal 1
 # hint: use String#ord
-
-
+def ascii_code(character)
+  if character.size != 1
+    'Input Error'
+  else 
+    character.ord
+  end
+end
 # method name: #pet_pun
 # parameter: animal (a string)
 # return value: nil
